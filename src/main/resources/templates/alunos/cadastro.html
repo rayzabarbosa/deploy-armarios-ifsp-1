@@ -1,0 +1,78 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring-4-4.dtd">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widht=devide-width, initial-scale=1.0, maximum-escale=1.0">
+    <meta name="author" content="Equipe Propeest">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+    <script type="text/javascript">
+        function validar() {
+            var senha = formcadastro.senha.value;
+            var senha2 = formcadastro.senha2.value;
+
+            if (senha != senha2) {
+                alert('Confirmação de senha incorreta');
+                formcadastro.senha.focus()
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+<h1>Armários IFSP</h1><br><br>
+<h2>Faça seu cadastro</h2>
+
+<section class="cadastro">
+    <h3>Dados Básicos</h3><br><br>
+
+    <form name="formcadastro" action="/alunos" method="post">
+        <label>Nome</label>
+        <input type="text" name="nome" placeholder="Nome Completo" required>
+        <hr>
+        <br><br>
+        <label>RG</label>
+        <input type="text" name="rg" placeholder="Somente Números" required>
+        <hr>
+        <br><br>
+        <label>CPF</label>
+        <input type="text" name="cpf" placeholder="Somente Números" required>
+        <hr>
+        <label>Registro do Aluno</label>
+        <input type="text" name="registro" placeholder="Somente Números e Letras" required>
+        <hr>
+        <br><br>
+        <label>Série/Ano</label>
+        <input type="text" name="ano" placeholder="ex.: 4ºano" required>
+        <hr>
+        <br><br>
+        <label>Classe/Turma</label>
+        <input type="text" name="turma" placeholder="ex.: 413" required>
+        <hr>
+        <br><br>
+        <label>E-mail</label>
+        <input type="email" name="email" placeholder="" required>
+        <hr>
+        <br><br>
+        <label>Celular com DDD</label>
+        <input type="tel" name="telefone" placeholder="Somente Números" required>
+        <hr>
+        <br><br>
+        <label>Insira uma Senha</label>
+        <input type="password" name="senha" placeholder="" required>
+        <hr>
+        <br><br>
+        <label>Confirme a Senha</label>
+        <input type="password" name="senha2" placeholder="" required>
+        <hr>
+        <br><br>
+        <section id="botoes">
+            <button class="botao2" type="submit" onclick="return validar()">Concluir</button>
+        </section>
+    </form>
+</section>
+
+</body>
+</html>
