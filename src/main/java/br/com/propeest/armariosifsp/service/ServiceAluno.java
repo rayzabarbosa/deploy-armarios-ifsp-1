@@ -24,6 +24,8 @@ public class ServiceAluno {
             }
 
             aluno.setSenha(Util.md5(aluno.getSenha()));
+            aluno.setRg(Util.md5(aluno.getRg()));
+            aluno.setCpf(Util.md5(aluno.getCpf()));
         } catch (NoSuchAlgorithmException e) {
 
             throw new CriptoExistException("Erro na criptografia da senha");

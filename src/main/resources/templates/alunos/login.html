@@ -20,23 +20,23 @@
     <section class="cadastro">
         <div class="form-group">
             <label>Email</label>
-            <input class="form-control" type="email" th:field="*{email}" placeholder="" required>
+            <input class="form-control" type="email" th:field="*{email}" required>
             <hr>
         </div>
         <br><br>
         <div class="form-group">
             <label>Senha</label>
-            <input class="form-control" type="password" th:field="*{senha}" placeholder="" required>
+            <input class="form-control" type="password" th:field="*{senha}" required>
             <hr>
         </div>
         <br><br>
         <div class="cadastrar">
             <a th:href="@{cadastro}">Não possuo uma conta</a>
         </div>
-    </section>
-
-    <section id="botoes">
-        <button class="botao2" type="submit">Entrar</button>
+        <br><br>
+        <section id="botoes">
+            <button class="botao2" type="submit">Entrar</button>
+        </section>
     </section>
 </form>
 

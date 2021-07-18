@@ -28,7 +28,7 @@
 <section class="cadastro">
     <h3>Dados Básicos</h3><br><br>
 
-    <form name="formcadastro" action="/alunos" method="post">
+    <form method="post" action="/alunos">
         <label>Nome</label>
         <input type="text" name="nome" placeholder="Nome Completo" required>
         <hr>
@@ -40,6 +40,7 @@
         <label>CPF</label>
         <input type="text" name="cpf" placeholder="Somente Números" required>
         <hr>
+        <br><br>
         <label>Registro do Aluno</label>
         <input type="text" name="registro" placeholder="Somente Números e Letras" required>
         <hr>
@@ -53,7 +54,7 @@
         <hr>
         <br><br>
         <label>E-mail</label>
-        <input type="email" name="email" placeholder="" required>
+        <input type="email" name="email" required>
         <hr>
         <br><br>
         <label>Celular com DDD</label>
@@ -61,11 +62,11 @@
         <hr>
         <br><br>
         <label>Insira uma Senha</label>
-        <input type="password" name="senha" placeholder="" required>
+        <input type="password" name="senha" required>
         <hr>
         <br><br>
         <label>Confirme a Senha</label>
-        <input type="password" name="senha2" placeholder="" required>
+        <input type="password" name="senha2" required>
         <hr>
         <br><br>
         <section id="botoes">
